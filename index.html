@@ -8,75 +8,81 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="container">
-    <!-- adds header -->
-    <header>
-    <div class="site-header">
-      <h1>Jam Box Studios</h1>
-      <!-- add nav -->
-      <div class="main-nav">
-        <ul>
-          <!-- MAY NEED TO REMOVE ID -->
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#main">Studio</a></li>
-        </ul>
-      </div>
-      <!-- does nav belong in header ? -->
+    <header role="banner">
+      <div class="site-header">
+        <h1>Jam Box Studios</h1>
+        <!-- add nav -->
+        <div class="main-nav" role="navigation">
+          <ul>
+            <!-- MAY NEED TO REMOVE ID -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#main">Studio</a></li>
+          </ul>
+        </div>
     </header>
-      <!-- adds img alt -->
-      <img src="https://placekitten.com/1200/900" alt= "Kitten" class="banner">
-    </div>
-    <!-- MAY NEED TO REMOVE ID -->
-    <!-- add main tag -->
-    <div class="main-content" id="main">
-      <!-- MAY NEED TO CHANGE H1S TO OTHER HS.. -->
-      <a href="#owner"><h1>Welcome to Jam Box</h1></a>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <!-- add aside or smth -->
-      <div class="owner" id="owner">
-        <a href="#address"><h1>Meet the owner</h1></a>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
-        </ul>
-        <address id="address">
-        <a href="#contact"><h1>Address</h1></a>
+    <img src="https://placekitten.com/1200/900" alt="Kitten" class="banner">
+  </div>
+  <div class="main-content" id="main" role="main">
+    <a href="#owner">
+      <h1>Welcome to Jam Box</h1>
+    </a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet,
+      officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia
+      veritatis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
+      omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error
+      voluptatibus.</p>
+    <div class="owner" id="owner" role="complementary">
+      <a href="#address">
+        <h1>Meet the owner</h1>
+      </a>
+      <ul itemscope itemtype="https://schema.org/Person">
+        <li itemprop="name">Name: John Doe</li>
+        <li itemprop="jobTitle">Title: CEO</li>
+        <li itemprop="email">Email: johnjoe@jambox.ca</li>
+        <li itemprop="telephone">Phone: 613-000-0000</li>
+      </ul>
+      <address id="address">
+        <a href="#contact" role="contentinfo">
+          <h1>Address</h1>
+        </a>
         <p>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
         </p>
-        </address>
-      </div>
-      <div class="contact-section" id="contact">
-        <a href="#"><h1>Contact Us</h1></a>
-        <form action="thanks.html">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Full Name">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Email">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Subject">
-          <label for="message"><b>Your Message</b></label>
-          <textarea id="message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+      </address>
     </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
+    <div class="contact-section" id="contact" role="form">
+      <a href="#">
+        <h1>Contact Us</h1>
+      </a>
+      <form action="thanks.html">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Full Name">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Email">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject">
+        <label for="message"><b>Your Message</b></label>
+        <textarea id="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
+  </div>
+  <div class="site-footer">
+    &copy; 2021 Jam Box Studios
+  </div>
   </div>
 </body>
 
