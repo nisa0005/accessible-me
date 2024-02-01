@@ -22,10 +22,10 @@
       <div class="main-nav">
         <ul>
           <!-- MAY NEED TO REMOVE ID -->
-          <li><a href="#main">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#main">Studio</a></li>
         </ul>
       </div>
       <!-- does nav belong in header ? -->
@@ -37,42 +37,43 @@
     <!-- add main tag -->
     <div class="main-content" id="main">
       <!-- MAY NEED TO CHANGE H1S TO OTHER HS.. -->
-      <h1>Welcome to Jam Box</h1>
+      <a href="#owner"><h1>Welcome to Jam Box</h1></a>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <!-- add aside or smth -->
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      <div class="owner" id="owner">
+        <a href="#address"><h1>Meet the owner</h1></a>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <address id="address">
+        <a href="#contact"><h1>Address</h1></a>
         <p>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
         </p>
+        </address>
       </div>
-      <!-- add aside or smth -->
-      <div class="contact-section">
-        <!-- put labels for the forms -->
-        <h1>Contact Us</h1>
+      <div class="contact-section" id="contact">
+        <a href="#"><h1>Contact Us</h1></a>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Full Name">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject">
+          <label for="message"><b>Your Message</b></label>
+          <textarea id="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
     </div>
-    <!-- add footer -->
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
     </div>
