@@ -15,20 +15,18 @@
 
 <body>
   <div class="container">
-    <header role="banner">
-      <div class="site-header">
-        <h1>Jam Box Studios</h1>
-        <!-- add nav -->
-        <div class="main-nav" role="navigation">
-          <ul>
-            <!-- MAY NEED TO REMOVE ID -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#main">Studio</a></li>
-          </ul>
-        </div>
-    </header>
+    <div class="site-header" role="banner">
+      <h1>Jam Box Studios</h1>
+      <!-- add nav -->
+      <div class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#main">Studio</a></li>
+        </ul>
+      </div>
+    </div>
     <img src="https://placekitten.com/1200/900" alt="Kitten" class="banner">
   </div>
   <div class="main-content" id="main" role="main">
@@ -51,9 +49,9 @@
         <li itemprop="email">Email: johnjoe@jambox.ca</li>
         <li itemprop="telephone">Phone: 613-000-0000</li>
       </ul>
-      <address id="address">
-        <a href="#contact" role="contentinfo">
-          <h1>Address</h1>
+      <div id="address" role="contentinfo">
+        <a href="#contact">
+          <h2>Address</h2>
         </a>
         <p>
           Jambox Studios
@@ -61,7 +59,7 @@
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </address>
+      </div>
     </div>
     <div class="contact-section" id="contact" role="form">
       <a href="#">
@@ -82,7 +80,6 @@
   </div>
   <div class="site-footer">
     &copy; 2021 Jam Box Studios
-  </div>
   </div>
 </body>
 
